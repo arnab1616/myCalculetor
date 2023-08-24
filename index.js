@@ -25,8 +25,11 @@ function showInDisplay(btn){
             document.querySelector(".calculetor input").value += '0';
         break;
         case '=':
-            if(btn === "Enter" | btn ==='=')
             document.querySelector(".calculetor input").value = eval(document.querySelector(".calculetor input").value);
+        break;
+        case 'Enter':
+            document.querySelector(".calculetor input").value = eval(document.querySelector(".calculetor input").value);
+        break;
         default:
             if(btn!== '=')
             document.querySelector(".calculetor input").value +=btn;
