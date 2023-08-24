@@ -1,0 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    height: 100vh;
+    background-color: #ccacdc;
+    /* display: grid; */
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.container .calculetor{
+    background: #63c5c6;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.219);
+    border-radius: 10px;
+    margin: auto;
+}
+.container .heading{
+    color: rgb(198, 235, 243);
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 2px 2px rgb(73, 69, 69);
+    /* text-transform: uppercase; */
+}
+.container .calculetor form input,button{
+    border: 0;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 1.7em;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    /* align-items: center; */
+}
+.container .calculetor form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.container .calculetor form .display input{
+    text-align: right;
+    flex: 2;
+    font-size: 45px;
+    box-shadow: 0 0 10px 3px #00000033;
+    box-shadow: border-box;
+    padding: 20px;
+    height: 80px;
+    color: white;
+    background-color: #218380;
+}
+.container .calculetor form .numBtn{
+    background: #012a4a;
+}
+.container .calculetor form .symBtn{
+    background-color: #edae49;
+}
+.container .calculetor form .spcBtn{
+    background: #248277;
+}
+.container .calculetor form .ac,.del{
+    background-color: #5f0000;
+}
+.container .calculetor form .equal{
+    background-color: #005f08;
+    width: 145px;
+}
+.container .calculetor form input:hover{
+    box-shadow: 0px 0px 5px 3px #00000025;
+}
